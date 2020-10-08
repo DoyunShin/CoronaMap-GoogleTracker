@@ -1,0 +1,26 @@
+{
+    "type": "activitySegment",
+    "location": {
+        "start": [
+            json["startLocation"]["latitudeE7"], 
+            json["startLocation"]["longitudeE7"]
+        ], "end": [
+            json["endLocation"]["latitudeE7"], 
+            json["endLocation"]["longitudeE7"]
+        ]
+    },
+    "time": [
+        json["duration"]["startTimestampMs"],
+        json["duration"]["endTimestampMs"]
+    ],
+    "distance": json["distance"],
+    "type": json["activityType"],
+    "mid": json["simplifiedRawPath"]["points"],
+    "parking": json["parkingEvent"]
+}
+
+{
+    "type": "placeVisit",
+    "location": [json["centerLatE7"], json["centerLngE7"]],
+    "duration": [json["duration"]["startTimestampMs"], json["duration"]["endTimestampMs"]],
+}
