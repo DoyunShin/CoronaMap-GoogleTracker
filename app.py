@@ -1,9 +1,9 @@
 class storage():
     def __init__(self):
         # CONNECTION INFO
-        self.db = "tdb0_low"
-        self.user = "comseba0"
-        self.passwd = "zjaTpqkepdlxjqpdltm1!"
+        self.db = ""
+        self.user = ""
+        self.passwd = ""
 
 class database():
     def __init__(self):
